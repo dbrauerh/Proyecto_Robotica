@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imagenes_resize</folder>
+	<filename>s30.jpg</filename>
+	<path>C:\Users\c-ba_\Desktop\semaforos_resized\content\imagenes_resize\s30.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>semaforo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>126</xmin>
+			<ymin>31</ymin>
+			<xmax>146</xmax>
+			<ymax>108</ymax>
+		</bndbox>
+	</object>
+</annotation>
