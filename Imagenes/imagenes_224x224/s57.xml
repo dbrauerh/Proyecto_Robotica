@@ -1,0 +1,26 @@
+<annotation>
+	<folder>etiquetar</folder>
+	<filename>s57.jpg</filename>
+	<path>C:\Users\carlo\Desktop\etiquetar\s57.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>semaforo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>51</xmin>
+			<ymin>35</ymin>
+			<xmax>100</xmax>
+			<ymax>202</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imagenes_resize</folder>
+	<filename>s37.jpg</filename>
+	<path>D:\U\Semestre IV mecánica\Róbotica\proyecto\semaforos_resized\content\imagenes_resize\s37.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>semaforo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>114</xmin>
+			<ymin>20</ymin>
+			<xmax>162</xmax>
+			<ymax>199</ymax>
+		</bndbox>
+	</object>
+</annotation>
