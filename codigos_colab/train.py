@@ -14,24 +14,19 @@
 # ==============================================================================
 
 r"""Training executable for detection models.
-
 This executable is used to train DetectionModels. There are two ways of
 configuring the training job:
-
 1) A single pipeline_pb2.TrainEvalPipelineConfig configuration file
 can be specified by --pipeline_config_path.
-
 Example usage:
     ./train \
         --logtostderr \
         --train_dir=path/to/train_dir \
         --pipeline_config_path=pipeline_config.pbtxt
-
 2) Three configuration files can be provided: a model_pb2.DetectionModel
 configuration file to define what type of DetectionModel is being trained, an
 input_reader_pb2.InputReader file to specify what training data will be used and
 a train_pb2.TrainConfig file to configure training parameters.
-
 Example usage:
     ./train \
         --logtostderr \
@@ -44,9 +39,8 @@ Example usage:
 import functools
 import json
 import os
-import tensorflow.compat.v1 as tf
-from tensorflow.python.util.deprecation import deprecated
-
+import tensorflow as tf
+from tensorflow.contrib import framework as contrib_framework
 
 from object_detection.builders import dataset_builder
 from object_detection.builders import graph_rewriter_builder
@@ -86,7 +80,7 @@ flags.DEFINE_string('model_config_path', '',
 FLAGS = flags.FLAGS
 
 
-@deprecated(None, 'Use object_detection/model_main.py.')
+@contrib_framework.deprecated(None, 'Use object_detection/model_main.py.')
 def main(_):
   assert FLAGS.train_dir, '`train_dir` is missing.'
   if FLAGS.task == 0: tf.gfile.MakeDirs(FLAGS.train_dir)
@@ -183,4 +177,4 @@ def main(_):
 
 
 if __name__ == '__main__':
-  tf.compat.v1.app.run()
+  tf.app.run()
